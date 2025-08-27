@@ -1,0 +1,56 @@
+Python Comments:
+   '#': Single-line comment
+   ''' ''': Multi-line comment
+
+if __name__ == "__main__":
+     main()
+- Executes main() only if the file is run directly, not when imported.
+
+Script vs Module:
+- Script: Executable code (run directly).
+- Module: Code library (imported into other code).
+
+"cProfile":
+- Optimization tool for profiling Python scripts.
+- Provides total running time, per-function time, and call counts.
+
+"-m" Flag:
+- Runs a module as a script, e.g., python -m cProfile myscript.py.
+
+"range()":
+- Returns an iterable object that generates numbers on demand.
+
+Executing Hello.py:
+- python Hello.py
+- Make the file executable and run Hello.py
+- Import in the interpreter: import Hello
+
+Shebang Line "#! /usr/bin/env python3":
+- Indicates the script should be run with Python.
+- Helps Unix-like OS recognize and execute the script with the specified interpreter.
+
+Collatz Conjecture:
+
+take a positive integer:
+if even, divide by 2.
+if odd, multiply by 3 and add 1.
+Repeat until reaching 1.
+
+Example sequences: 5 → 16 → 8 → 4 → 2 → 1.
+cycle length of 5 is 6
+cycle length of 10 is 7
+
+Assertions:
+
+assertions are not appropriate for testing code
+unit test frameworks like Python's unittest are
+
+assert is NOT good for testing
+assert is NOT good for user error
+
+they are appropriate for programmer errors
+exceptions will be the correct tool for user errors
+
+When an assertion fails, it stops the program. When I am testing a program. 
+I do not want the program to stop. I need to complete all tests. 
+That's why we use unit testing. 
