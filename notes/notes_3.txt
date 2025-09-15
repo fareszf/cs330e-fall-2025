@@ -1,0 +1,36 @@
+unittest
+
+Python's unittest in its simplest form consists of the function main and the class TestCase. To use it:
+
+1. Import main and TestCase from unittest.
+2. Define a class that extends TestCase.
+3. Inside this class, create functions that start with 'test'.
+4. Run the tests by placing main() in your file, usually at the bottom.
+
+assertEqual() is one of many kinds of assertions that unittest provides.
+
+Python's self is analogous to Java's this.
+
+A nice feature of Python's unittest is that even if an internal assertion fails, it will continue running all the tests.
+
+The quality of the unit tests is essential to the usefulness of unit testing.
+
+The Python tool coverage measures how many lines of your code a unit test actually tests.
+
+coverage
+
+Test coverage or code coverage measures the percentage of your code covered by tests. Coverage testing only checks whether a test is present; it does not assess the quality of the test.
+
+- --branch: Activates branch coverage. Without this option, only statement coverage is measured.
+- -m flag: Shows the line numbers of missing statements.
+
+Coverage output includes:
+
+- Stmts: The number of code statements that could be tested.
+- Miss: The number of lines not executed by the unit tests.
+- Branch: The number of possible branches in the code.
+- BrPart: The number of branches executed during tests.
+- Cover: The percentage of code covered by the current tests, calculated as [(Stmts + Branch) - (Miss + (Branch - BrPart))] / (Stmts + Branch).
+- Missing: The lines (and branches) that were not covered by tests.
+
+For more information, refer to: https://coverage.readthedocs.org
