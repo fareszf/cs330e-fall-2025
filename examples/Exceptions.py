@@ -26,6 +26,8 @@ except NameError as e :
     assert isinstance(e.args, tuple)
     assert len(e.args)  ==     1
     assert e.args       is not ("abc",)
+   # This line may cause a SyntaxWarning. To suppress, run:
+    # $ python -W ignore::SyntaxWarning Exceptions.py
     assert e.args       ==     ("abc",)
 else :
     assert False
