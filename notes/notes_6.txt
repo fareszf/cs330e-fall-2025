@@ -1,7 +1,8 @@
 Mutables vs. Immutables:
 ----------------------
 Mutables are objects that can be changed after creation. Examples include list, set, and dict.
-Immutables are objects that cannot be changed after creation, and attempts to modify them may result in creating a new object. Examples include tuples, frozensets, str, int, etc.
+Immutables are objects that cannot be changed after creation, and attempts to modify them may result 
+in creating a new object. Examples include tuples, frozensets, str, int, etc.
 
 + vs += 
 -------
